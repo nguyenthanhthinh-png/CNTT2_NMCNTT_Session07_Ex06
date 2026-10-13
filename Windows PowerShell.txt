@@ -1,0 +1,7 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\thanhthinh> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+PS C:\Users\thanhthinh> .\safe_cleanup.ps1
+PS C:\Users\thanhthinh>
+fwd-i-search: _

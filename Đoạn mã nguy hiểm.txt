@@ -1,0 +1,13 @@
+Đoạn mã nguy hiểm:
+Remove-Item -Path "C:\*" -Recurse -Force
+Write-Host "Da don dep xong!"
+
+
+- -Path "C:\*": Chỉ định tất cả mục bên trong ổ C, có thể bao gồm dữ liệu cá nhân và tệp hệ thống.
+- -Recurse: Xóa đệ quy cả các tệp và thư mục con.
+- -Force: Cố xóa cả các mục bị ẩn hoặc chỉ đọc; không có nghĩa là bỏ qua mọi cơ chế bảo vệ.
+Hậu quả: Có thể xóa hàng loạt dữ liệu quan trọng, làm hỏng hệ điều hành và khiến máy chủ không hoạt động. Dòng Write-Host vẫn có thể in thông báo dù việc xóa gặp lỗi, nên không thể dùng nó để xác nhận thành công.
+3 nguyên tắc vàng thẩm định mã AI:
+1. Đọc và hiểu: Không chạy mã khi chưa hiểu từng câu lệnh.
+2. Khoanh vùng đường dẫn: Chỉ thao tác trong thư mục dự án được chỉ định.
+3. Kiểm tra trước khi thực thi: Xác minh đường dẫn, phạm vi xóa và thử nghiệm trên dữ liệu mẫu trước khi chạy thật.
